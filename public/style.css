@@ -1,0 +1,57 @@
+.card{
+
+    height: 200px;
+    width: 400px;
+   background-color: #81eaec;
+   position: relative;
+   left: 300px;
+   border-radius: 20px;
+   margin: 30px;
+   box-shadow: 0px 5px 5px #aaa;
+    
+}
+
+.mylogo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    position: relative;
+    top: -3px;
+    left: -1px;
+}
+
+.currentstatus{
+    position: relative;
+    top: -120px;
+    left: 325px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    width: fit-content;
+    border-radius: 5px;   
+}
+
+.liveterminal{
+    position: relative;
+    background-color: black;
+    width: 250px;
+    height: 120px;
+    top: -100px;
+    left: 90px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px #ffffff;
+}
+.terminal-name{
+    left: 80px;
+    border-radius: 5px; 
+    box-shadow: 0px 5px 5px #aaa;
+    position: relative;
+    top: -10px;
+    background-color: red;
+    width: fit-content;
+}
+.buttonControl{
+    position:relative;
+    left: 20px;
+    top: 20px;
+}

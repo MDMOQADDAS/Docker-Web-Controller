@@ -1,17 +1,46 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import {MyCard}  from './components/card.jsx'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import containerdb from  './components/db.js'
+
+function cardBuilder(data){
+  return(
+    <MyCard
+    status={data.status}
+    terminal={data.terminal}
+    logo = {data.logo}
+    >
+
+    </MyCard>
+  )
+}
+
+ReactDOM.render(
+  <div>
+   {containerdb.map(cardBuilder)}
+  </div>,
+  // <div>
+  // <MyCard 
+  // status={containerdb[0].status} 
+  // terminal={containerdb[0].terminal}  
+  // logo={containerdb[0].logo}>
+
+  // </MyCard>
+  // <MyCard 
+  // status={containerdb[1].status} 
+  // terminal={containerdb[1].terminal}   
+  // logo={containerdb[1].logo}>
+
+  // </MyCard>
+  // <MyCard 
+  // status={containerdb[2].status} 
+  // terminal={containerdb[2].terminal}  
+  // logo={containerdb[2].logo}>
+
+  // </MyCard>
+  
+  
+  document.getElementById('root')
+)
